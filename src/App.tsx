@@ -42,6 +42,7 @@ const text = {
     hours: { ko: '영업시간', en: 'Hours' },
     address: { ko: '주소', en: 'Address' },
     addr: { ko: '123 Example Street, Auckland (가상 주소)', en: '123 Example Street, Auckland (fictional address)' },
+    ckLine: { ko: '이런 홈페이지가 필요하신가요? CK Web 문의:', en: 'Want a site like this? Contact CK Web:' },
     foot: { ko: '샘플 사이트 · 가상 업체 · 사진 Unsplash 스톡', en: 'Sample site · fictional business · stock photos via Unsplash' },
 };
 
@@ -263,6 +264,6 @@ export function App() {
                 <Route path="/contact" element={<Contact l={l} />} />
             </Routes>
         </main>
-        <footer className="s-foot">{text.foot[l]}</footer>
+        <footer className="s-foot">{text.foot[l]}<br />{text.ckLine[l]} <a href="mailto:ckweb.nz@gmail.com">ckweb.nz@gmail.com</a></footer>
     </div>;
 }
